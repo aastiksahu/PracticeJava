@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+C:\Users\aasti\OneDrive\Desktop\practice DWP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4114876002.index
+\Dynamic-Web-Project\src
+C:\Users\aasti\OneDrive\Desktop\practice DWP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2599130778.index
+\Dynamic-Web-Project\src

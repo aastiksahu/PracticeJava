@@ -1,0 +1,17 @@
+
+Mar 16, 2025 21:34:01.04 NEW SESSION
+Mar 16, 2025 21:34:01.04 Created TensorFlow Lite XNNPACK delegate for CPU.
+Mar 16, 2025 21:34:01.09 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#-1 is a dynamic-sized tensor).
+Mar 16, 2025 21:57:22.21 Created TensorFlow Lite XNNPACK delegate for CPU.
+Mar 16, 2025 21:57:22.42 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#-1 is a dynamic-sized tensor).
+
+Mar 17, 2025 15:38:16.13 NEW SESSION
+Mar 17, 2025 15:38:16.13 Created TensorFlow Lite XNNPACK delegate for CPU.
+Mar 17, 2025 15:38:16.18 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#-1 is a dynamic-sized tensor).
+Mar 17, 2025 15:47:07.09 [4308:7400:0317/154707.093:ERROR:new_tab_page_handler.cc(1341)] NewTabPage loaded into a non-browser-tab context
+Mar 17, 2025 16:02:39.04 Created TensorFlow Lite XNNPACK delegate for CPU.
+Mar 17, 2025 16:02:39.24 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#-1 is a dynamic-sized tensor).
+Mar 17, 2025 16:09:31.01 Created TensorFlow Lite XNNPACK delegate for CPU.
+Mar 17, 2025 16:09:31.02 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#-1 is a dynamic-sized tensor).
+Mar 17, 2025 16:43:13.22 Created TensorFlow Lite XNNPACK delegate for CPU.
+Mar 17, 2025 16:43:13.25 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#-1 is a dynamic-sized tensor).

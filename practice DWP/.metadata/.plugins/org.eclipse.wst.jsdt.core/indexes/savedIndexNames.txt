@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\aasti\OneDrive\Desktop\practice DWP\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1107433089.index
+2616047502.index
+1124719587.index
+662954823.index
+2521601709.index
+1679254646.index
