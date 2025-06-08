@@ -1,0 +1,83 @@
+package com.rays.user;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import com.rays.util.JDBCDataSource;
+
+public class UserModel {
+
+	public void addUser(Userbean bean) throws Exception {
+
+		Connection conn = null;
+
+		try {
+
+			conn = JDBCDataSource.getcConnection();
+
+			conn.setAutoCommit(false);
+
+			PreparedStatement pstmt = conn.prepareStatement("insert into user values(?,?,?,?,?,?,?,?,?,?)");
+
+			pstmt.setInt(1, bean.getId());
+			pstmt.setString(2, bean.getFirstName());
+			pstmt.setString(3, bean.getLastName());
+			pstmt.setString(4, bean.getGender());
+			pstmt.setDate(5, new java.sql.Date(bean.getDob().getTime()));
+			pstmt.setString(6, bean.getAddress());
+			pstmt.setString(7, bean.getMobileNo());
+			pstmt.setString(8, bean.getEmailId());
+			pstmt.setString(9, bean.getUserName());
+			pstmt.setString(10, bean.getPassword());
+
+			int i = pstmt.executeUpdate();
+			System.out.println("Data Inserted Successfully : " + i);
+
+			conn.commit();
+
+		} catch (Exception e) {
+			conn.rollback();
+			e.printStackTrace();
+
+		}
+	}
+	
+	public void update(Userbean bean) throws Exception {
+
+		Connection conn = null;
+
+		try {
+			
+			conn = JDBCDataSource.getcConnection();
+
+			conn.setAutoCommit(false);
+
+			PreparedStatement pstmt = conn.prepareStatement(
+					"update marksheet set firstName = ?, lastName = ?, physics = ?, chemistry = ?, maths = ? where rollNo = ?");
+
+			pstmt.setInt(1, bean.getId());
+			pstmt.setString(2, bean.getFirstName());
+			pstmt.setString(3, bean.getLastName());
+			pstmt.setString(4, bean.getGender());
+			pstmt.setDate(5, new java.sql.Date(bean.getDob().getTime()));
+			pstmt.setString(6, bean.getAddress());
+			pstmt.setString(7, bean.getMobileNo());
+			pstmt.setString(8, bean.getEmailId());
+			pstmt.setString(9, bean.getUserName());
+			pstmt.setString(10, bean.getPassword());
+
+			int i = pstmt.executeUpdate();
+
+			System.out.println("Data Update Successfully....." + i);
+
+			conn.commit();
+
+		} catch (Exception e) {
+			conn.rollback();
+			e.printStackTrace();
+
+		}
+
+	}
+
+
+}

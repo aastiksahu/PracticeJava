@@ -1,0 +1,26 @@
+
+Apr 24, 2025 10:46:40.54 NEW SESSION
+Apr 24, 2025 10:46:40.58 Created TensorFlow Lite XNNPACK delegate for CPU.
+Apr 24, 2025 10:46:40.72 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#-1 is a dynamic-sized tensor).
+Apr 24, 2025 11:50:10.01 [8144:2032:0424/115008.121:ERROR:cert_issuer_source_aia.cc(136)] AiaRequest::OnFetchCompleted got error -7
+
+Apr 24, 2025 15:52:53.32 NEW SESSION
+Apr 24, 2025 15:52:53.92 [5060:2496:0424/155253.295:ERROR:command_storage_backend.cc(226)] Commands successfully read before error: 178, bytes successfully read from file before error: 781678
+Apr 24, 2025 15:57:15.57 Created TensorFlow Lite XNNPACK delegate for CPU.
+Apr 24, 2025 15:57:17.08 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#-1 is a dynamic-sized tensor).
+
+Apr 28, 2025 14:56:50.19 NEW SESSION
+Apr 28, 2025 14:56:50.27 Created TensorFlow Lite XNNPACK delegate for CPU.
+Apr 28, 2025 14:56:50.42 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#-1 is a dynamic-sized tensor).
+Apr 28, 2025 15:08:33.66 Created TensorFlow Lite XNNPACK delegate for CPU.
+Apr 28, 2025 15:08:33.68 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#-1 is a dynamic-sized tensor).
+
+Apr 29, 2025 15:49:42.00 NEW SESSION
+Apr 29, 2025 15:49:42.26 [5668:6492:0429/154941.933:ERROR:network_service_instance_impl.cc(612)] Network service crashed, restarting service.
+Apr 29, 2025 15:49:46.36 [5668:4428:0429/154946.369:ERROR:persistent_memory_allocator.cc(891)] Corruption detected in shared-memory segment.
+Apr 29, 2025 15:49:58.65 [5668:8256:0429/154958.651:ERROR:backend_impl.cc(985)] Critical error found -8
+Apr 29, 2025 15:50:09.46 Created TensorFlow Lite XNNPACK delegate for CPU.
+Apr 29, 2025 15:50:09.87 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#-1 is a dynamic-sized tensor).
+Apr 29, 2025 15:52:36.60 [5668:6492:0429/155236.600:ERROR:device_event_log_impl.cc(202)] [15:52:36.600] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+Apr 29, 2025 16:02:50.87 [5668:6492:0429/160250.871:ERROR:device_event_log_impl.cc(202)] [16:02:50.871] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+Apr 29, 2025 16:58:39.63 [5668:6492:0429/165839.553:ERROR:device_event_log_impl.cc(202)] [16:58:39.554] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)

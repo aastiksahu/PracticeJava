@@ -1,0 +1,42 @@
+package com.rays.user;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import com.rays.marksheet.MarksheetBean;
+import com.rays.util.JDBCDataSource;
+
+public class UserModel {
+
+	public void addUser(MarksheetBean bean) throws Exception {
+
+		Connection conn = null;
+
+		try {
+
+			conn = JDBCDataSource.getcConnection();
+
+			conn.setAutoCommit(false);
+
+			PreparedStatement pstmt = conn.prepareStatement("insert into user values(?,?,?,?,?,?)");
+
+			pstmt.setInt(1, bean.getRollNo());
+			pstmt.setString(2, bean.getFirstName());
+			pstmt.setString(3, bean.getLastName());
+			pstmt.setInt(4, bean.getPhysics());
+			pstmt.setInt(5, bean.getChemistry());
+			pstmt.setInt(6, bean.getMaths());
+
+			int i = pstmt.executeUpdate();
+			System.out.println("Data Inserted Successfully : " + i);
+
+			conn.commit();
+
+		} catch (Exception e) {
+			conn.rollback();
+			e.printStackTrace();
+
+		}
+	}
+
+}

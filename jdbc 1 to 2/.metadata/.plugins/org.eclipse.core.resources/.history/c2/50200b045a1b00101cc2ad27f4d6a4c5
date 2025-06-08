@@ -1,0 +1,10 @@
+package com.rays.user;
+
+public class TestUserModel {
+	public static void main(String[] args) {
+
+	}
+
+	testaddUser();
+
+}

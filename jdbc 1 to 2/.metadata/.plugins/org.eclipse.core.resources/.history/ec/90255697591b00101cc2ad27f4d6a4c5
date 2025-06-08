@@ -1,0 +1,44 @@
+package com.rays.user;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import com.rays.util.JDBCDataSource;
+
+public class UserModel {
+
+	public void addUser(Userbean bean) throws Exception {
+
+		Connection conn = null;
+
+		try {
+
+			conn = JDBCDataSource.getcConnection();
+
+			conn.setAutoCommit(false);
+
+			PreparedStatement pstmt = conn.prepareStatement("insert into user values(?,?,?,?,?,?,?,?,?,?)");
+
+			pstmt.setInt(1, bean.getId());
+			pstmt.setString(2, bean.getFirstName());
+			pstmt.setString(3, bean.getLastName());
+			pstmt.setString(5, bean.getGender());
+			pstmt.setDate(4, Date);
+			pstmt.setString(9, bean.getAddress());
+			pstmt.setLong(10, bean.getMobileNo());
+			pstmt.setString(6, bean.getEmailId());
+			pstmt.setString(7, bean.getUserName());
+			pstmt.setString(8, bean.getPassword());
+			
+			int i = pstmt.executeUpdate();
+			System.out.println("Data Inserted Successfully : " + i);
+
+			conn.commit();
+
+		} catch (Exception e) {
+			conn.rollback();
+			e.printStackTrace();
+
+		}
+	}
+
+}

@@ -1,0 +1,33 @@
+package com.rays.user;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+
+public class TestUserModel {
+	public static void main(String[] args) throws Exception {
+
+		testaddUser();
+	}
+
+	private static void testaddUser() throws Exception {
+		
+		Userbean bean = new Userbean();
+		UserModel model = new UserModel();
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+		
+		bean.setId(2);
+		bean.setFirstName("Chetu");
+		bean.setLastName("Baba");
+		bean.setGender("Male");
+		bean.setDob(sdf.parse("2002-04-29"));
+		bean.setAddress("Mandsore");
+		bean.setMobileNo("9876543210");
+		bean.setEmailId("amit@gmail.com");
+		bean.setUserName("amitkirar");
+		bean.setPassword("Amit@123");
+		
+		model.addUser(bean);
+		
+	}
+
+}

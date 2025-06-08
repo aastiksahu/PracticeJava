@@ -1,0 +1,16 @@
+package com.rays.user;
+
+public class TestUserModel {
+	public static void main(String[] args) {
+
+		testaddUser();
+	}
+
+	private static void testaddUser() {
+		
+		Userbean bean = new Userbean();
+		UserModel model = new UserModel();
+		
+	}
+
+}
